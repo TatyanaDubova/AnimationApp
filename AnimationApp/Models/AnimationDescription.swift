@@ -28,7 +28,7 @@ struct AnimationDescription {
 
 extension AnimationDescription {
     static func getRandomSpringAnimation() -> AnimationDescription {
-        return AnimationDescription (
+        AnimationDescription (
             preset: AnimationPreset.allCases.randomElement()?.rawValue ?? "",
             curve: AnimationCurve.allCases.randomElement()?.rawValue ?? "",
             force: Float.random(in: 0...1),
